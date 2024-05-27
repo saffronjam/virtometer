@@ -1,0 +1,102 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "name": {
+            "type": "string"
+        },
+        "group": {
+            "type": "string"
+        },
+        "metadata": {
+            "type": "null"
+        },
+        "timers": {
+            "type": "object",
+            "properties": {
+                "finished": {
+                    "type": "string"
+                },
+                "started": {
+                    "type": "string"
+                },
+                "vm-running": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "finished",
+                "started",
+                "vm-running"
+            ]
+        },
+        "metrics": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "cpu": {
+                            "type": "object",
+                            "properties": {
+                                "cores": {
+                                    "type": "array",
+                                    "items": [
+                                        {
+                                            "type": "number"
+                                        },
+                                        {
+                                            "type": "number"
+                                        },
+                                        {
+                                            "type": "number"
+                                        },
+                                        {
+                                            "type": "number"
+                                        },
+                                        {
+                                            "type": "number"
+                                        }
+                                    ]
+                                },
+                                "average": {
+                                    "type": "number"
+                                }
+                            },
+                            "required": [
+                                "cores",
+                                "average"
+                            ]
+                        },
+                        "ram": {
+                            "type": "number"
+                        },
+                        "disk": {
+                            "type": "integer"
+                        },
+                        "timestamp": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "name",
+                        "cpu",
+                        "ram",
+                        "disk",
+                        "timestamp"
+                    ]
+                }
+            ]
+        }
+    },
+    "required": [
+        "name",
+        "group",
+        "metadata",
+        "timers",
+        "metrics"
+    ]
+}
