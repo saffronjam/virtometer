@@ -154,7 +154,7 @@ The framework is split into four phases to allow for a more modular approach to 
 
 ### Payload
 
-**The following metrics are collected during the benchmarking process:**
+The following metrics are collected during the benchmarking process:
 | Metric | Unit | Description |
 | --- | --- | --- |
 | CPU utilization | % | The percentage of CPU used by the system |
@@ -163,7 +163,7 @@ The framework is split into four phases to allow for a more modular approach to 
 | Task duration | s | The duration of a specific task |
 
 
-**The following VM types are used in the benchmarking process:**
+The following VM types are used in the benchmarking process:
 | Type | CPU | RAM | Disk Size |
 | --- | --- | --- | --- |
 | Type 1 | 1 | 128 MB | 1 GB |
@@ -172,7 +172,7 @@ The framework is split into four phases to allow for a more modular approach to 
 | Type 4 | 4 | 4 GB | 20 GB |
 
 
-**The following tests are performed during the benchmarking process:**
+The following tests are performed during the benchmarking process:
 | Test | Purpose |
 | --- | --- |
 | Create each type of VM and delete it | Evaluate the basic functionality of the VM management systems without addressing potential load issues. |
