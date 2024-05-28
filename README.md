@@ -1,5 +1,9 @@
-# 🧑‍💻 virtometer 
+<!-- make center -->
+<div align="center">
+  <img src="img/cover.png" alt="cover" width="60%"/>
+</div>
 
+# 
 A framework for benchmarking VM management systems using Azure.
 
 | System | Support |
