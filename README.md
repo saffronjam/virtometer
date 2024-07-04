@@ -135,8 +135,6 @@ type VmManagementSystem interface {
 
 	// WaitForRunningVM waits for the VM to be running
 	WaitForRunningVM(name string) error
-	// WaitForAccessibleVM waits for the VM to be accessible via SSH
-	//WaitForAccessibleVM(name string) error
 
 	// DeleteAllVMs deletes all VMs in the environment.
 	// It should be treated as a cleanup operation, and not be included in any benchmarking
